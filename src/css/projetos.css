@@ -1,0 +1,7 @@
+.fotoImagem {
+    transition: .3s ease-in;
+    filter: grayscale(100%);
+}
+.fotoImagem:hover {
+    filter: grayscale(0%);
+}

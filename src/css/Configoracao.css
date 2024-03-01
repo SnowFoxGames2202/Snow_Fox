@@ -1,0 +1,106 @@
+.config {
+    text-align: center;
+    align-items: center;
+    line-height: 2;
+}
+.conDark {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.darkMode {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(160, 160, 160);
+    border-radius: 50px;
+    margin: 10px 46%;
+    position: relative;
+    cursor: pointer;
+}
+.darkMode .indic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+.darkMode.darkAtv .indic {
+    left: 20px;
+    background-color: black;
+}
+.darkMode.darkAtv {
+    background-color: rgb(99, 99, 99);
+}
+body.darkAtv {
+    background-color: rgb(50, 50, 50);
+}
+body.darkAtv #top {
+    background-color: rgb(30, 30, 30);
+
+}
+body.darkAtv #top img {
+    width: 140px;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    background-color: rgb(54, 54, 54);
+}
+body.darkAtv #menu {
+    background-color: rgb(15,  15, 15);
+}
+body.darkAtv #abai {
+    color: white;
+}
+body.darkAtv h1 {
+    color: white;
+}
+body.darkAtv #icon {
+    color: rgb(0, 187, 187);
+}
+body.darkAtv p {
+    color: white;
+}
+/*contatos*/
+.conInfo {
+    padding: 30px 0;
+}
+.contato {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.conInfo i {
+    margin: 1%;
+    color: blue;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+body.darkAtv .conInfo i {
+    color: rgb(0, 187, 187);
+}
+.conInfo a {
+    color: blue;
+    text-decoration: none;
+}
+body.darkAtv .conInfo a {
+    color: rgb(0, 187, 187);
+}
+/*usuario*/
+#usuario_con {
+    display: grid;
+    background-color: rgb(222, 222, 222);
+    border: solid;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgb(0, 187, 187);
+}
+#usuario_con i {
+    font-size: 100px;
+}
+body.darkAtv #usuario_con {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}

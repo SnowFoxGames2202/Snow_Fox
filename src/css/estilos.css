@@ -1,0 +1,161 @@
+ /*cabeçalho*/
+#top {
+    display: flex;
+    justify-content: center;
+    background: rgb(207, 207, 207);
+    align-items: center;
+    height: 19vh;
+    padding: 0 30px;
+    position: relative;
+    transition: .5s;
+}
+
+#icon-sfg {
+    width: 140px;
+    mix-blend-mode: multiply;
+}
+#logo {
+    font-family: 'Salsa', cursive;
+    font-size: 60px;
+    color: lightblue;
+    cursor: default;
+    background-image: linear-gradient(to bottom, lightblue, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    filter: drop-shadow(1px 1px 1px rgb(0, 99, 99));
+}
+#login {
+    right: 5;
+    margin: 10px auto;
+}
+#login:hover {
+    cursor: pointer;
+}
+/*menu*/
+
+#menu:hover {
+    width: 200px;
+}
+#menu:hover #text-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+.item-menu:hover {
+    background-color: rgb(127, 172, 255);
+}
+#menu {
+    width: 50px;
+    height: 81vh;
+    background-color: whitesmoke;
+    padding: 0 0 0 0;
+    transition: .5s;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+ul li.item-menu a {
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+}
+ul li.ativo {
+    background-color: rgb(127, 172, 255);
+}
+ul li.item-menu a #text-link {
+    margin-left: 75px;
+    color: black;
+    line-height: 37px;
+    transition: .5s;
+    opacity: 0;
+}
+ul li.item-menu a #icon {
+    font-size: 30px;
+}
+.item-menu {
+    transition: .5s;
+}
+
+/*conteudo*/
+main {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+#pag {
+    display: none;
+}
+#pag.ativo {
+    display: block;
+}
+
+/*login*/
+#loginDiv {
+    display: none;
+    top: 0;
+    align-items: center;
+    background-color: rgba(61, 61, 61, .9);
+    width: 100vw;
+    height: 100vh;
+}
+#lg {
+    height: 300px;
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) ;
+    border-radius: 20px;
+    padding: 50px;
+    border: solid;
+    border-color: aquamarine;
+}
+body.darkAtv  #lg{
+    background-color: rgb(50, 50, 50);
+    border-color: rgb(0, 187, 187);
+}
+form {
+    width: 300px;
+    margin: 350px auto;
+    text-align: center;
+    background-color: rgb(190, 190, 190);
+    border: solid;
+    border-color: aquamarine;
+}
+input {
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    color: aquamarine;
+    border-radius: 30px;
+    border-color: aquamarine;
+}
+body.darkAtv input {
+    color: rgb(0, 187, 187);
+    border-color: rgb(0, 187, 187);
+    background-color: rgb(37, 37, 37);
+}
+h3 {
+    font-size: 30px;
+    color: black;
+}
+body.darkAtv h3 {
+    color: whitesmoke;
+}
+#chk {
+    scale: 50%;
+    cursor: pointer;
+}
+#enter {
+    cursor: pointer;
+    color: royalblue;
+}
