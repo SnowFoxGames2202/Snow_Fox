@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./src/css/inicio.css">
     <link rel="stylesheet" href="./src/css/estilos.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
-    <link rel="stylesheet" href="./src/css/Configoracao.css">
+    <link rel="stylesheet" href="./src/css/configoracao.css">
     <link rel="stylesheet" href="./src/css/projetos.css">
+    <link rel="stylesheet" href="./src/css/contatos.css">
     <title>Snow Fox Game</title>
     <link rel="website icon" type="png" href="./src/imagem/icon_SFG.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +17,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="folha de estilo" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900 &display=swap" rel="folha de estilo">
 </head>
 <body>
+    <audio id="sound" src="./src/sons/snow-step-1-81064.mp3" preload="auto"></audio>
     <div id="top">
-        <img id="icon-sfg" src="./src/imagem/icon_SFG.png" alt="icon">
+        <img id="icon-sfg" src="./src/imagem/icon_SFG.png" alt="icon_SFG">
         <h1 id="logo">
             Snow Fox Game
         </h1>
@@ -27,7 +35,7 @@
     <div id="abas">
         <nav id="menu">
             <ul>
-                <li id="inicio" class="item-menu ativo">
+                <li id="minicio" class="item-menu ativo">
                     <a href="#">
                         <span id="icon">
                             <i class="bi bi-house"></i>
@@ -35,7 +43,7 @@
                         <span id="text-link"><p id="abai">Inicio</p></span>
                     </a>
                 </li>
-                <li id="projetos" class="item-menu">
+                <li id="mprojetos" class="item-menu">
                     <a href="#">
                         <span id="icon">
                             <i class="bi bi-controller"></i>
@@ -43,7 +51,7 @@
                         <span id="text-link"><p id="abai">Projetos</p></span>
                     </a>
                 </li>
-                <li id="loja" class="item-menu">
+                <li id="mloja" class="item-menu">
                     <a href="#">
                         <span id="icon">
                             <i class="bi bi-bag"></i></i>
@@ -51,7 +59,7 @@
                         <span id="text-link"><p id="abai">Loja</p></span>
                     </a>
                 </li>
-                <li id="sobre" class="item-menu">
+                <li id="msobre" class="item-menu">
                     <a href="#">
                         <span id="icon">
                             <i class="bi bi-exclamation-circle"></i></i>
@@ -59,7 +67,7 @@
                         <span id="text-link"><p id="abai">Sobre</p></span>
                     </a>
                 </li>
-                <li id="contatos" class="item-menu">
+                <li id="mcontatos" class="item-menu">
                     <a href="#">
                         <span id="icon">
                             <i class="bi bi-chat-left-dots"></i>
@@ -67,7 +75,7 @@
                         <span id="text-link"><p id="abai">Contato</p></span>
                     </a>
                 </li>
-                <li id="config" class="item-menu">
+                <li id="mconfig" class="item-menu">
                     <a href="#">
                         <span id="icon">
                             <i class="bi bi-toggles"></i>
@@ -79,54 +87,72 @@
         </nav>
     </div>
     <main>
-        <div class="inicio ativo" id="pag">
-            <h1 class="boasVindas">
+        <div class="pag ativo" id="inicio">
+            <h2 class="boasVindas">
                 Bem-vindo a Snow Fox Game!
-            </h1>
-            <p class="descricaoInicio">
-                Olá! desejamos uma boa vinda a você! Somos uma empresa de jogos e desejamos um boa diverção a você.
-            </p>
+            </h2>
+            <div id="descricao">
+                <img src="" alt="">
+                <p class="descricaoInicio">
+                    Olá! desejamos uma boa vinda a você! Somos uma empresa de jogos e desejamos um boa diverção a você.
+                </p>
+            </div>
         </div>
-        <div class="projetos" id="pag">
-            <h1 class="oi">Projetos</h1>
-            <p>God x Demon</p>
-            <img src="./src/imagem/images.png" alt="" class="fotoImagem"/>
+        <div class="pag" id="projetos">
+            <h2 class="oi" id="tprojetos">Projetos</h2>
+            <div id="cards">
+                <dir id="projet1">
+                    <img src="./src/imagem/capa_gxd.png" alt="capa_gxd" width="150px" height="90%" id="capa_gxd" class="fotoImagem" onclick="gxd()"/>
+                    <p id="dprojetos">God x Demon</p>
+                </dir>
+            </div>
         </div>
-        <div class="loja" id="pag">
-            <h1 class="oi">loja</h1>
+        <div class="pag" id="loja">
+            <h2 class="oi">loja</h2>
         </div>
-        <div class="sobre" id="pag">
-            <h1 class="oi">Sobre</h1>
+        <div class="pag" id="sobre">
+            <h2 class="oi">Sobre</h2>
         </div>
-        <div class="contato" id="pag">
-            <h1 class="oi">Contato</h1>
-            <p>Utilize nossas redes sociais para feedback e relatos de bugs</p>
-            <div>
-                <div id="insta" class="conInfo">
-                    <i class="bi bi-instagram"></i>
-                    <a href="https://www.instagram.com/snow_fox_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                        @snow_fox_studio
-                    </a>
-                </div>
-                <div id="what" class="conInfo">
-                    <i class="bi bi-whatsapp"></i>
-                    <a href="#">(25) 9 9575-3530</a>
-                </div>
-                <div id="you" class="conInfo">
-                    <i class="bi bi-youtube"></i>
-                    <a href="https://youtube.com/@snowfoxstudio-wh1js?si=iraRjbuli-Ieczjo">
-                        Snow Fox Studio
-                    </a>
+        <div class="pag" id="contato">
+            <div id="cont">
+                <h2 class="tcont">Contato</h2>
+                <p class="tcont">Utilize nossas redes sociais para feedback e relatos de bugs</p>
+                <div id="links">
+                    <div id="insta" class="conInfo">
+                        <i class="bi bi-instagram"></i>
+                        <a href="https://www.instagram.com/snow_fox_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                            @snow_fox_studio
+                        </a>
+                    </div>
+                    <div id="what" class="conInfo">
+                        <i class="bi bi-whatsapp"></i>
+                        <a href="#">(25) 9 9575-3530</a>
+                    </div>
+                    <div id="you" class="conInfo">
+                        <i class="bi bi-youtube"></i>
+                        <a href="https://youtube.com/@snowfoxstudio-wh1js?si=iraRjbuli-Ieczjo">
+                            Snow Fox Studio
+                        </a>
+                    </div>
+                    <div id="you" class="conInfo">
+                        <i class="bi bi-discord"></i>
+                        <a href="https://discord.gg/4k2xk8FVa9">
+                            Snow Fox Studio
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="config" id="pag">
+        <div class="pag" id="config">
             <div id="usuario_con">
                 <i class="bi bi-person"></i>
                 <h2>Usuario</h2>
-                <Button id="login" onclick="login()">Login</Button>
+                <div id="butcadastro">
+                    <Button class="enter" id="login" onclick="login()">Login</Button>
+                    <Button class="enter" id="cadastro" onclick="cadastro()">Cadastro</Button>
+                </div>
             </div>
-            <h1 class="oi">Configuração</h1>
+            <h2 class="oi">Configuração</h2>
             <div  class="conDark">
                 <p>Modo Escuro/Claro</p>
                 <div class="darkMode dark" id="darkMode">
@@ -139,13 +165,38 @@
         <div id="lg">
             <h3>Login</h3>
             <div>
-                <input type="text" placeholder="Usuario" id="user1">
-                <input type="password" placeholder="Senha" id="pass1">
-                <input type="submit" onclick="login; return false" id="enter">
+                <form action="contas.php" method="post">
+                    <input type="text" placeholder="Usuario" id="user1">
+                    <input type="password" placeholder="Senha" id="pass1">
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
             <p style="color: red;">Aviso</p>
             <p>Esta parte é somente <br> para funcionarios</p>
+        </div>>
+    </div>
+    <div id="cadastroDiv">
+        <div id="cd">
+            <h3>Cadastro</h3>
+            <div>
+                <form id="formCadastro" action="info.php" method="POST">
+                    <label for="nome">Nome: </label><br>
+                    <input type="text" name="nome" id="nome"><br>
+                    <label for="usuario">Usuario: </label><br>
+                    <input type="text" name="usuario" id="usuario"><br>
+                    <label for="email">Email: </label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="senha">Senha: </label><br>
+                    <input type="password" name="senha" id="senha"><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
+    </div>
+    <div id="restrito">
+        <h3>Acesso Restrito!</h3>
+        <input type="text" name="acesso" id="acesso">
+        <button onclick="validar()">Validar</button>
     </div>
     <script src="./src/js/menu.js"></script>
     <script src="./src/js/config.js"></script>
