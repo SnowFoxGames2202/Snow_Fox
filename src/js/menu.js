@@ -18,7 +18,7 @@ item.forEach((item, indice) =>{
 const loginButton = document.getElementById("login");
 const loginDiv = document.getElementById("loginDiv");
 
-loginButton.addEventListener("click", function(event) {
+loginButton.addEventListener("click", function(e) {
     event.preventDefault();
     event.stopPropagation();
     loginDiv.style.position = "absolute";
@@ -61,20 +61,6 @@ cadastroButton.addEventListener("click", function(event) {
     cadastroDiv.style.zIndex = "1000";
     document.body.appendChild(cadastroDiv);
     cadastroDiv.style.display = "block";
-    var sound = document.getElementById("sound");
-    sound.play();
-});
-
-const pass1 = document.getElementById(`pass1`).value;
-const chk = document.getElementById(`chk`)
-chk.addEventListener("click", function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    if (chk.checked) {
-        pass1.type = "text";
-    } else {
-        pass1.type = "password";
-    }
     var sound = document.getElementById("sound");
     sound.play();
 });

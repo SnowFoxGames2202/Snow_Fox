@@ -101,10 +101,10 @@
         <div class="pag" id="projetos">
             <h2 class="oi" id="tprojetos">Projetos</h2>
             <div id="cards">
-                <dir id="projet1">
+                <div id="projet1">
                     <img src="./src/imagem/capa_gxd.png" alt="capa_gxd" width="150px" height="90%" id="capa_gxd" class="fotoImagem" onclick="gxd()"/>
                     <p id="dprojetos">God x Demon</p>
-                </dir>
+                </div>
             </div>
         </div>
         <div class="pag" id="loja">
@@ -143,13 +143,15 @@
                 </div>
             </div>
         </div>
+        <!--Houve mudanças no Login e Cadastro-->
+
         <div class="pag" id="config">
             <div id="usuario_con">
                 <i class="bi bi-person"></i>
                 <h2>Usuario</h2>
                 <div id="butcadastro">
-                    <Button class="enter" id="login" onclick="login()">Login</Button>
-                    <Button class="enter" id="cadastro" onclick="cadastro()">Cadastro</Button>
+                    <button class="enter" id="login" onclick="login()">Login</button>
+                    <button class="enter" id="cadastro" onclick="cadastro()">Cadastro</button>
                 </div>
             </div>
             <h2 class="oi">Configuração</h2>
@@ -160,39 +162,38 @@
                 </div>
             </div>
         </div>
-    </main>
-    <div id="loginDiv">
-        <div id="lg">
-            <h3>Login</h3>
-            <div>
-                <form action="contas.php" method="post">
-                    <input type="text" placeholder="Usuario" id="user1">
+        
+        <div id="loginDiv">
+            <div id="lg">
+                <h3>Login</h3>
+                <div>
+                    <input type="text" placeholder="Usuário" id="user1">
                     <input type="password" placeholder="Senha" id="pass1">
-                    <button type="submit">Enviar</button>
-                </form>
+                    <!-- Chame a função login() ao clicar no botão -->
+                    <button onclick="login()">Enviar</button>
+                </div>
+                <p style="color: red;">Aviso</p>
+                <p>Esta parte é somente para funcionários</p>
             </div>
-            <p style="color: red;">Aviso</p>
-            <p>Esta parte é somente <br> para funcionarios</p>
-        </div>>
-    </div>
-    <div id="cadastroDiv">
-        <div id="cd">
-            <h3>Cadastro</h3>
-            <div>
-                <form id="formCadastro" action="info.php" method="POST">
+        </div>
+    
+        <div id="cadastroDiv">
+            <div id="cd">
+                <h3>Cadastro</h3>
+                <div>
                     <label for="nome">Nome: </label><br>
                     <input type="text" name="nome" id="nome"><br>
-                    <label for="usuario">Usuario: </label><br>
+                    <label for="usuario">Usuário: </label><br>
                     <input type="text" name="usuario" id="usuario"><br>
                     <label for="email">Email: </label><br>
                     <input type="email" name="email" id="email"><br>
                     <label for="senha">Senha: </label><br>
                     <input type="password" name="senha" id="senha"><br>
-                    <button type="submit">Enviar</button>
-                </form>
+                    <!-- Chame a função registrarUsuario() ao clicar no botão -->
+                    <button type="submit" onclick="registrarUsuario()">Enviar</button>
+                </div>
             </div>
         </div>
-    </div>
     <div id="restrito">
         <h3>Acesso Restrito!</h3>
         <input type="text" name="acesso" id="acesso">
@@ -201,5 +202,8 @@
     <script src="./src/js/menu.js"></script>
     <script src="./src/js/config.js"></script>
     <script src="./src/js/cabecalio.js"></script>
+
+    <!--FireBase-->
+    <script type="module" src="./src/js/firebase.js"></script>
 </body>
 </html>
