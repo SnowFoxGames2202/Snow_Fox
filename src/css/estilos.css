@@ -8,8 +8,8 @@
     padding: 0 30px;
     position: relative;
     transition: .5s;
+    border-bottom: 2px solid blue;
 }
-
 #icon-sfg {
     width: 140px;
     mix-blend-mode: multiply;
@@ -26,17 +26,10 @@
     color: black;
     filter: drop-shadow(1px 1px 1px rgb(0, 99, 99));
 }
-#login {
-    right: 5;
-    margin: 10px auto;
-}
-#login:hover {
-    cursor: pointer;
-}
 /*menu*/
 
 #menu:hover {
-    width: 200px;
+    width: 220px;
 }
 #menu:hover #text-link {
     margin-left: 40px;
@@ -54,6 +47,7 @@
     overflow: hidden;
     position: absolute;
     z-index: 1;
+    border-right: 2px solid blue;
 }
 ul li.item-menu a {
     color: blue;
@@ -83,79 +77,23 @@ ul li.item-menu a #icon {
 /*conteudo*/
 main {
     width: 100%;
-    height: 100vh;
+    height: 81vh;
     align-items: center;
     text-align: center;
 }
-#pag {
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 100;
+    font-style: normal;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 100;
+    font-style: normal;
+}
+.pag {
     display: none;
 }
-#pag.ativo {
+.pag.ativo {
     display: block;
-}
-
-/*login*/
-#loginDiv {
-    display: none;
-    top: 0;
-    align-items: center;
-    background-color: rgba(61, 61, 61, .9);
-    width: 100vw;
-    height: 100vh;
-}
-#lg {
-    height: 300px;
-    width: 400px;
-    align-items: center;
-    text-align: center;
-    background-color: antiquewhite;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%) ;
-    border-radius: 20px;
-    padding: 50px;
-    border: solid;
-    border-color: aquamarine;
-}
-body.darkAtv  #lg{
-    background-color: rgb(50, 50, 50);
-    border-color: rgb(0, 187, 187);
-}
-form {
-    width: 300px;
-    margin: 350px auto;
-    text-align: center;
-    background-color: rgb(190, 190, 190);
-    border: solid;
-    border-color: aquamarine;
-}
-input {
-    display: block;
-    margin: 10px auto;
-    width: 250px;
-    height: 30px;
-    color: aquamarine;
-    border-radius: 30px;
-    border-color: aquamarine;
-}
-body.darkAtv input {
-    color: rgb(0, 187, 187);
-    border-color: rgb(0, 187, 187);
-    background-color: rgb(37, 37, 37);
-}
-h3 {
-    font-size: 30px;
-    color: black;
-}
-body.darkAtv h3 {
-    color: whitesmoke;
-}
-#chk {
-    scale: 50%;
-    cursor: pointer;
-}
-#enter {
-    cursor: pointer;
-    color: royalblue;
 }
