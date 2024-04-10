@@ -16,7 +16,7 @@ item.forEach((item, indice) =>{
 const loginButton = document.getElementById("login");
 const loginDiv = document.getElementById("loginDiv");
 
-loginButton.addEventListener("click", function(e) {
+loginButton.addEventListener("click", function(event) {
     event.preventDefault();
     event.stopPropagation();
     loginDiv.style.position = "absolute";
